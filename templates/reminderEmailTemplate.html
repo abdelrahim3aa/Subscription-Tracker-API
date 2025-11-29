@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Subscription Reminder</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #f5f7fa;
+      font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: #333;
+    }
+    .wrapper {
+      width: 100%;
+      padding: 40px 0;
+    }
+    .container {
+      max-width: 600px;
+      margin: 0 auto;
+      background: #fff;
+      border-radius: 14px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+      overflow: hidden;
+      border: 1px solid #e5e7eb;
+    }
+    .header {
+      background: linear-gradient(135deg, #eb2525, #f63b3b);
+      color: #fff;
+      text-align: center;
+      padding: 28px 20px;
+    }
+    .header h1 {
+      margin: 0;
+      font-size: 24px;
+      font-weight: 600;
+    }
+    .content {
+      padding: 30px;
+      line-height: 1.7;
+    }
+    .content h2 {
+      margin-top: 0;
+      font-size: 20px;
+      color: #111827;
+    }
+    .highlight {
+      background-color: #f0f4ff;
+      border-left: 4px solid #eb2525;
+      padding: 12px 18px;
+      border-radius: 6px;
+      margin: 20px 0;
+      font-size: 14px;
+    }
+    .btn {
+      display: inline-block;
+      background-color: #eb2525;
+      color: white !important;
+      text-decoration: none;
+      padding: 12px 24px;
+      border-radius: 8px;
+      font-weight: 600;
+      margin-top: 15px;
+    }
+    .btn:hover {
+      background-color: #d81e1e;
+    }
+    .footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 12px;
+      color: #9ca3af;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrapper">
+    <div class="container">
+      <div class="header">
+        <h1>📅 Subscription Reminder</h1>
+      </div>
+      <div class="content">
+        <h2>Hi {{name}},</h2>
+        <p>
+          Your subscription to <strong>{{subscriptionName}}</strong> will renew on 
+          <strong>{{renewalDate}}</strong>.
+        </p>
+        <div class="highlight">
+          ⏳ Only <strong>{{diffDays}} days</strong> left until renewal.  
+          Please ensure your payment details are up to date to avoid interruptions.
+        </div>
+        <a href="{{link}}" class="btn">Manage Subscription</a>
+        <p style="font-size:13px; color:#6b7280; margin-top:20px;">
+          You’re receiving this email because you have active renewal reminders enabled.
+        </p>
+      </div>
+      <div class="footer">
+        <p>© 2025 SubTrack Inc. All rights reserved.</p>
+        <p>Smart subscription management made simple.</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

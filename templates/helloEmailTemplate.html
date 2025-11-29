@@ -1,0 +1,105 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+  <meta charset="UTF-8" /> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" /> 
+  <title>Welcome to SubTrack</title> 
+  <style> 
+    body { 
+      margin: 0; 
+      padding: 0; 
+      background-color: #f5f7fa; 
+      font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+      color: #333; 
+    } 
+    .wrapper { 
+      width: 100%; 
+      padding: 40px 0; 
+    } 
+    .container { 
+      max-width: 600px; 
+      margin: 0 auto; 
+      background: #fff; 
+      border-radius: 14px; 
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05); 
+      overflow: hidden; 
+      border: 1px solid #e5e7eb; 
+    } 
+    .header { 
+      background: linear-gradient(135deg, #2222c5, #1616a3); 
+      color: #fff; 
+      text-align: center; 
+      padding: 28px 20px; 
+    } 
+    .header h1 { 
+      margin: 0; 
+      font-size: 24px; 
+      font-weight: 600; 
+    } 
+    .content { 
+      padding: 30px; 
+      line-height: 1.7; 
+    } 
+    .content h2 { 
+      margin-top: 0; 
+      font-size: 20px; 
+      color: #111827; 
+    } 
+    .highlight { 
+      background-color: #ecfdf5; 
+      border-left: 4px solid #2a22c5; 
+      padding: 12px 18px; 
+      border-radius: 6px; 
+      margin: 20px 0; 
+      font-size: 14px; 
+    } 
+    .btn { 
+      display: inline-block; 
+      background-color: #2a22c5; 
+      color: white !important; 
+      text-decoration: none; 
+      padding: 12px 24px; 
+      border-radius: 8px; 
+      font-weight: 600; 
+      margin-top: 15px; 
+    } 
+    .btn:hover { 
+      background-color: #1d16a3; 
+    } 
+    .footer { 
+      text-align: center; 
+      padding: 20px; 
+      font-size: 12px; 
+      color: #9ca3af; 
+    } 
+  </style> 
+</head> 
+<body> 
+  <div class="wrapper"> 
+    <div class="container"> 
+      <div class="header"> 
+        <h1>🎉 Welcome to SubTrack</h1> 
+      </div> 
+      <div class="content"> 
+        <h2>Hi {{name}},</h2> 
+        <p> 
+          You’ve successfully added your first subscription:  
+          <strong>{{subscriptionName}}</strong> 🎊  
+        </p> 
+        <div class="highlight"> 
+          💡 Renewal Date: <strong>{{renewalDate}}</strong> <br />
+        </div> 
+        <p>We’ll remind you before the renewal date so you never miss a payment.</p> 
+        <a href="{{link}}" class="btn">View My Subscriptions</a> 
+        <p style="font-size:13px; color:#6b7280; margin-top:20px;"> 
+          Thanks for trusting SubTrack to manage your subscriptions. 
+        </p> 
+      </div> 
+      <div class="footer"> 
+        <p>© 2025 SubTrack Inc. All rights reserved.</p> 
+        <p>Smart subscription management made simple.</p> 
+      </div> 
+    </div> 
+  </div> 
+</body> 
+</html>
